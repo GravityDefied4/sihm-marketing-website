@@ -2,6 +2,7 @@ import { useOutletContext, useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowLeft, ChevronRight, ImageOff } from 'lucide-react';
 import type { SchoolOutletContext } from './SchoolLayout';
+import { useSEO } from '../hooks/useSEO';
 
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr);
@@ -15,6 +16,12 @@ export default function NewsArticlePage() {
   const secondary = school.school.secondaryColor;
 
   const article = school.news.find((n) => n.id === newsId);
+  useSEO({
+    title: article
+      ? `${article.headline ?? article.title} | ${school.school.abbreviation}`
+      : `News | ${school.school.abbreviation}`,
+    description: article?.excerpt,
+  });
   if (!article) return <Navigate to="/news" replace />;
 
   // Other articles for sidebar/related

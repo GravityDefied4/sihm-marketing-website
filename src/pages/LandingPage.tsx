@@ -1,5 +1,6 @@
 import { useOutletContext } from 'react-router-dom';
 import type { SchoolOutletContext } from './SchoolLayout';
+import { useSEO } from '../hooks/useSEO';
 
 import HeroSection from '../components/sections/HeroSection';
 import AboutPreviewSection from '../components/landing/AboutPreviewSection';
@@ -13,6 +14,10 @@ import NewsSection from '../components/sections/NewsSection';
 
 export default function LandingPage() {
   const school = useOutletContext<SchoolOutletContext>();
+  useSEO({
+    title: `${school.school.abbreviation} | ${school.university.name}`,
+    description: school.school.description,
+  });
 
   // Limit previews for landing page
   const previewSchool = {
