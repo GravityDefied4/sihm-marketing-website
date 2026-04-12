@@ -20,7 +20,6 @@ export default function SchoolHeader({ school }: SchoolHeaderProps) {
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
-  const primary = school.school.primaryColor;
   const secondary = school.school.secondaryColor;
 
   const navItems: NavItem[] = [
@@ -71,7 +70,7 @@ export default function SchoolHeader({ school }: SchoolHeaderProps) {
   return (
     <>
       {/* Top bar */}
-      <div className="text-content text-xs py-1.5 px-4 flex items-center justify-between" style={{ backgroundColor: primary }}>
+      <div data-theme="dark" className="text-content text-xs py-1.5 px-4 flex items-center justify-between" style={{ backgroundColor: secondary }}>
         <a href={school.university.website} target="_blank" rel="noreferrer"
           className="flex items-center gap-1 hover:opacity-80 transition-opacity">
           <ExternalLink size={11} />
@@ -187,7 +186,7 @@ export default function SchoolHeader({ school }: SchoolHeaderProps) {
                         <ChevronDown size={14} className={`transition-transform ${mobileExpanded === item.label ? 'rotate-180' : ''}`} />
                       </button>
                       {mobileExpanded === item.label && (
-                        <div className="ml-3 mt-1 space-y-1 border-l-2 pl-3" style={{ borderColor: primary + '40' }}>
+                        <div className="ml-3 mt-1 space-y-1 border-l-2 pl-3" style={{ borderColor: `${secondary}40` }}>
                           {item.children.map((child) => (
                             <Link
                               key={child.label}

@@ -40,7 +40,7 @@ export default function SchoolFooter({ school }: SchoolFooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer style={{ backgroundColor: primary }} className="text-content">
+    <footer data-theme="dark" style={{ backgroundColor: secondary }} className="text-content">
       <div className="container-wide px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
@@ -48,9 +48,9 @@ export default function SchoolFooter({ school }: SchoolFooterProps) {
             <div className="flex items-center gap-3 mb-4">
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: secondary }}
+                style={{ backgroundColor: primary }}
               >
-                <GraduationCap size={20} className="text-white" />
+                <GraduationCap size={20} style={{ color: secondary }} />
               </div>
               <div>
                 <p className="text-xs text-content-muted uppercase tracking-wide">{school.university.name}</p>
@@ -63,19 +63,19 @@ export default function SchoolFooter({ school }: SchoolFooterProps) {
             <div className="flex gap-3">
               {school.socialMedia.facebook && (
                 <a href={school.socialMedia.facebook} target="_blank" rel="noreferrer"
-                  className="w-9 h-9 rounded-full bg-black/10 hover:bg-black/20 flex items-center justify-center transition-colors">
+                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
                   <FacebookIcon />
                 </a>
               )}
               {school.socialMedia.instagram && (
                 <a href={school.socialMedia.instagram} target="_blank" rel="noreferrer"
-                  className="w-9 h-9 rounded-full bg-black/10 hover:bg-black/20 flex items-center justify-center transition-colors">
+                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
                   <InstagramIcon />
                 </a>
               )}
               {school.socialMedia.twitter && (
                 <a href={school.socialMedia.twitter} target="_blank" rel="noreferrer"
-                  className="w-9 h-9 rounded-full bg-black/10 hover:bg-black/20 flex items-center justify-center transition-colors">
+                  className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
                   <TwitterIcon />
                 </a>
               )}
@@ -84,7 +84,7 @@ export default function SchoolFooter({ school }: SchoolFooterProps) {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide" style={{ color: secondary }}>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide" style={{ color: primary }}>
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -110,7 +110,7 @@ export default function SchoolFooter({ school }: SchoolFooterProps) {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide" style={{ color: secondary }}>
+            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide" style={{ color: primary }}>
               Contact Us
             </h4>
             <ul className="space-y-3">
@@ -138,10 +138,13 @@ export default function SchoolFooter({ school }: SchoolFooterProps) {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-black/10">
+      <div className="border-t border-white/10">
         <div className="container-wide px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+          {/* <p className="text-xs text-content-subtle">
+            &copy; {currentYear} {school.school.name}, {school.university.name}. All rights reserved. 
+          </p> */}
           <p className="text-xs text-content-subtle">
-            &copy; {currentYear} {school.school.name}, {school.university.name}. All rights reserved.
+            &copy; {currentYear} CSITS Programming Sub Org. All rights reserved. 
           </p>
           <a
             href={school.university.website}
