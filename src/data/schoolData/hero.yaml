@@ -30,7 +30,7 @@ heroImage: ""
 # Call-to-action buttons
 ctaPrimary:
   label: "Apply Now"
-  href: "#admissions"
+  href: "/contact"
 
 ctaSecondary:
   label: "Explore Programs"

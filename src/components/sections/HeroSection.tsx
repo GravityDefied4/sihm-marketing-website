@@ -19,7 +19,7 @@ export default function HeroSection({ school }: HeroSectionProps) {
   const heroImage = school.school.heroImage;
   const cta = school.school.heroCta;
 
-  const primaryBtn = cta?.primary ?? { label: 'Apply Now', href: '#admissions' };
+  const primaryBtn = cta?.primary ?? { label: 'Apply Now', href: '/contact' };
   const secondaryBtn = cta?.secondary ?? { label: 'Explore Programs', href: '#programs' };
 
   if (variant === 'split-right') {
