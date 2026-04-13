@@ -16,10 +16,11 @@ variant: cards
 # PARTNER ORGANIZATIONS
 # ---------------------------------------------------------------------------
 # HOW TO ADD A PARTNER LOGO:
-#   1. Save the logo inside "public/images/sba/partners/" folder.
-#      Ideal size: 200×80 px, transparent background. Format: PNG or SVG.
-#      Example: public/images/sba/partners/sgv.png
-#   2. Set the logo value to: /images/sba/partners/sgv.png
+#   1. Save the logo inside "public/images/partners/" folder.
+#      Ideal size: 200×80 px, transparent background. Format: WebP or SVG.
+#      Example: public/images/partners/sgv.webp
+#   2. Set the logo value to just the filename with subfolder:
+#        logo: "partners/sgv.webp"
 #   3. Leave as "" to show the first two letters of the partner name instead.
 partners:
   - name: "SGV & Co. (Ernst & Young)"

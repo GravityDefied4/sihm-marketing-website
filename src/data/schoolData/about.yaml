@@ -12,10 +12,11 @@ dean:
   message: "Welcome to the School of Business and Accountancy. Our programs are designed to cultivate critical thinking, ethical leadership, and professional excellence. We are proud of our graduates who have made significant contributions to the business and accounting profession both locally and internationally. I invite you to be part of our community of excellence."
 
   # HOW TO ADD THE DEAN'S PHOTO:
-  #   1. Save the photo inside the "public/images/sba/" folder.
-  #      Ideal size: 400×400 px, square crop. Format: JPG or PNG.
-  #      Example: public/images/sba/dean.jpg
-  #   2. Set the value below to: /images/sba/dean.jpg
+  #   1. Save the photo inside the "public/images/" folder.
+  #      Ideal size: 400×400 px, square crop. Format: WebP.
+  #      Example: public/images/dean.webp
+  #   2. Set the value below to just the filename:
+  #        image: "dean.webp"
   #   3. Leave as "" to show a placeholder silhouette icon instead.
   image: ""
 

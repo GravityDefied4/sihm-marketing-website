@@ -21,11 +21,11 @@ school:
   # SCHOOL LOGO
   # ---------------------------------------------------------------------------
   # HOW TO ADD A LOGO:
-  #   1. Save your logo file inside the "public/images/sba/" folder.
-  #      Example file path on your computer: public/images/sba/logo.png
-  #      Recommended: PNG with transparent background, at least 400×400 px.
-  #   2. Set the value below to the web path (starts with /):
-  #        logo: /images/sba/logo.png
+  #   1. Save your logo file inside the "public/images/" folder.
+  #      Example file path on your computer: public/images/logo.webp
+  #      Recommended: WebP with transparent background, at least 400×400 px.
+  #   2. Set the value below to just the filename (no leading slash):
+  #        logo: "logo.webp"
   #   3. Leave it as "" (empty) to show the school name as text instead.
   logo: ""
 

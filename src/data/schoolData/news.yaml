@@ -26,10 +26,11 @@ variant: grid
 #   story   — The full article text. Use \n\n to separate paragraphs.
 #
 # HOW TO ADD A NEWS COVER PHOTO:
-#   1. Save the photo inside "public/images/sba/news/" folder.
-#      Ideal size: 1200×630 px (16:9 ratio). Format: JPG or WebP.
-#      Example: public/images/sba/news/accounting-olympiad.jpg
-#   2. Set the image value to: /images/sba/news/accounting-olympiad.jpg
+#   1. Save the photo inside "public/images/news/" folder.
+#      Ideal size: 1200×630 px (16:9 ratio). Format: WebP.
+#      Example: public/images/news/accounting-olympiad.webp
+#   2. Set the image value to just the filename with subfolder:
+#        image: "news/accounting-olympiad.webp"
 #   3. Leave as "" to show a colored placeholder.
 #
 # HOW TO ADD PHOTOS INSIDE AN ARTICLE (the photos[] list):

@@ -16,14 +16,14 @@ variant: split-right
 # HERO IMAGE
 # ---------------------------------------------------------------------------
 # HOW TO ADD A HERO IMAGE:
-#   1. Save your photo inside the "public/images/sba/" folder.
+#   1. Save your photo inside the "public/images/" folder.
 #      - For "centered" variant: use a wide landscape photo (1920×1080 px or larger).
-#        Formats: JPG or WebP. Keep file size under 500 KB for fast loading.
+#        Format: WebP. Keep file size under 500 KB for fast loading.
 #      - For "split-right" variant: use a portrait or square photo (800×900 px).
 #        The image will fill the right half of the screen.
-#      Example file path on your computer: public/images/sba/hero.jpg
-#   2. Set the value below to the web path (starts with /):
-#        heroImage: /images/sba/hero.jpg
+#      Example file path on your computer: public/images/hero.webp
+#   2. Set the value below to just the filename and subfolder (no leading slash):
+#        heroImage: "hero.webp"
 #   3. Leave it as "" to use a colored gradient background instead.
 heroImage: ""
 

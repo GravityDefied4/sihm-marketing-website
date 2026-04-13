@@ -16,11 +16,12 @@ variant: uniform
 # PHOTO GALLERY
 # ---------------------------------------------------------------------------
 # HOW TO ADD GALLERY PHOTOS:
-#   1. Save photos inside the "public/images/sba/gallery/" folder.
+#   1. Save photos inside the "public/images/gallery/" folder.
 #      Recommended size: 800×600 px (4:3 ratio) for "uniform" variant,
-#      or any size for "masonry". Format: JPG or WebP.
-#      Example: public/images/sba/gallery/business-summit.jpg
-#   2. Set the image value to: /images/sba/gallery/business-summit.jpg
+#      or any size for "masonry". Format: WebP.
+#      Example: public/images/gallery/business-summit.webp
+#   2. Set the image value to just the filename with subfolder:
+#        image: "gallery/business-summit.webp"
 #   3. Leave as "" to show a placeholder with the caption as text.
 gallery:
   - image: ""
@@ -40,10 +41,11 @@ gallery:
 # UPCOMING EVENTS  (shown beside the gallery)
 # ---------------------------------------------------------------------------
 # HOW TO ADD AN EVENT IMAGE:
-#   1. Save the image inside "public/images/sba/events/" folder.
-#      Recommended size: 600×400 px. Format: JPG or WebP.
-#      Example: public/images/sba/events/business-summit.jpg
-#   2. Set the image value to: /images/sba/events/business-summit.jpg
+#   1. Save the image inside "public/images/events/" folder.
+#      Recommended size: 600×400 px. Format: WebP.
+#      Example: public/images/events/business-summit.webp
+#   2. Set the image value to just the filename with subfolder:
+#        image: "events/business-summit.webp"
 events:
   - title: "Annual Business Summit 2024"
     date: "2024-05-15"

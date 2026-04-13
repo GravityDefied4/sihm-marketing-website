@@ -77,6 +77,19 @@ function parse<T>(raw: string): T {
   return yaml.load(raw) as T;
 }
 
+/**
+ * Resolves an image path written in a YAML file to its full public URL.
+ *
+ * YAML editors only need to write the relative part, e.g. "news/photo.webp".
+ * Absolute paths ("/images/...") and external URLs ("https://...") are
+ * passed through unchanged for backwards compatibility.
+ */
+function img(path: string | undefined | null): string {
+  if (!path) return '';
+  if (path.startsWith('http') || path.startsWith('/')) return path;
+  return `/images/${path}`;
+}
+
 export function loadSchool(): SchoolData {
   const school       = parse<SchoolFile>(schoolYaml);
   const hero         = parse<HeroFile>(heroYaml);
@@ -94,26 +107,31 @@ export function loadSchool(): SchoolData {
     university: school.university,
     school: {
       ...school.school,
-      heroImage: hero.heroImage || '',
+      logo: img(school.school.logo),
+      heroImage: img(hero.heroImage),
       heroCta: {
         primary: hero.ctaPrimary,
         secondary: hero.ctaSecondary,
       },
     },
-    dean: about.dean,
+    dean: { ...about.dean, image: img(about.dean?.image) },
     about: about.about,
     academics: academics.academics,
     programs: academics.programs,
     highlights: school.highlights,
-    faculty: faculty.faculty,
-    partners: partners.partners,
-    testimonials: testimonials.testimonials,
-    news: news.news,
-    accreditations: contact.accreditations,
+    faculty: (faculty.faculty || []).map(m => ({ ...m, image: img(m.image) })),
+    partners: (partners.partners || []).map(p => ({ ...p, logo: img(p.logo) })),
+    testimonials: (testimonials.testimonials || []).map(t => ({ ...t, image: img(t.image) })),
+    news: (news.news || []).map(n => ({
+      ...n,
+      image: img(n.image),
+      photos: (n.photos || []).map(ph => ({ ...ph, image: img(ph.image) })),
+    })),
+    accreditations: (contact.accreditations || []).map(a => ({ ...a, logo: img(a.logo) })),
     admissions: admissions.admissions,
     contact: contact.contact,
-    gallery: gallery.gallery,
-    events: gallery.events,
+    gallery: (gallery.gallery || []).map(g => ({ ...g, image: img(g.image) })),
+    events: (gallery.events || []).map(e => ({ ...e, image: img(e.image) })),
     socialMedia: school.socialMedia,
     sectionVariants: {
       hero: hero.variant,

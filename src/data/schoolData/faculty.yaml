@@ -24,10 +24,11 @@ variant: grid
 #   socialMedia — Links to professional profiles (leave as "" to hide)
 #
 # HOW TO ADD A FACULTY PHOTO:
-#   1. Save the photo inside the "public/images/sba/faculty/" folder.
-#      Ideal size: 400×400 px, square crop. Format: JPG or PNG.
-#      Example: public/images/sba/faculty/jose-reyes.jpg
-#   2. Set the image value to: /images/sba/faculty/jose-reyes.jpg
+#   1. Save the photo inside the "public/images/faculty/" folder.
+#      Ideal size: 400×400 px, square crop. Format: WebP.
+#      Example: public/images/faculty/jose-reyes.webp
+#   2. Set the image value to just the filename with subfolder:
+#        image: "faculty/jose-reyes.webp"
 #   3. Leave as "" to show a placeholder silhouette icon.
 faculty:
   - name: "Prof. Jose Reyes"
