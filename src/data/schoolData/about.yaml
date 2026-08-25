@@ -7,9 +7,9 @@
 # DEAN'S MESSAGE
 # ---------------------------------------------------------------------------
 dean:
-  name: "Dr. Maria Santos"
+  name: "Dr. Justin Frances Q. Callesto"
   title: "Dean, School of Business and Accountancy"
-  message: "Welcome to the School of Business and Accountancy. Our programs are designed to cultivate critical thinking, ethical leadership, and professional excellence. We are proud of our graduates who have made significant contributions to the business and accounting profession both locally and internationally. I invite you to be part of our community of excellence."
+  message: "Welcome to the School of International Hospitality Management. Our programs are designed to cultivate service excellence, cultural intelligence, and innovative leadership. We are proud of our graduates who have made significant contributions to the global hospitality and tourism industry. I invite you to be part of our community of excellence."
 
   # HOW TO ADD THE DEAN'S PHOTO:
   #   1. Save the photo inside the "public/images/" folder.
@@ -24,42 +24,40 @@ dean:
 # SCHOOL HISTORY & FUTURE DIRECTION
 # ---------------------------------------------------------------------------
 about:
-  history: "The School of Business and Accountancy was established in 1982 with a vision of producing competent business and accounting professionals who would contribute to the economic development of the region and the nation. From its humble beginnings with only two programs and a handful of faculty members, the school has grown into one of the most respected academic institutions in the region, consistently producing graduates who excel in the fields of accountancy, business management, and finance."
-  future: "The School of Business and Accountancy is committed to continuously evolving its curriculum and programs to meet the demands of the rapidly changing global business environment. We envision a future where our graduates lead in the digital economy, drive sustainable business practices, and contribute to national development through ethical and innovative leadership."
+  history: "The School of International Hospitality Management was established with a vision of producing competent hospitality and tourism professionals who would contribute to the economic development of the region through world-class service. From its humble beginnings, the school has grown into one of the most respected academic institutions in Pangasinan, consistently producing graduates who excel in hotel management, culinary arts, and tourism development."
+  future: "SIHM is committed to continuously evolving its curriculum to meet the demands of the rapidly changing global tourism landscape. We envision a future where our graduates lead in sustainable tourism, drive innovative hospitality practices, and contribute to national development through ethical and culturally sensitive leadership."
 
   # Vision, mission, and core values
-  vision: "A leading school of business and accountancy that produces globally competent, ethical, and innovative professionals who contribute to sustainable development."
-  mission: "To provide quality business and accountancy education through rigorous academic programs, industry partnerships, research, and community engagement that develop competent, ethical, and socially responsible professionals."
+  vision: "A premier school of hospitality and tourism in the region, producing globally competitive, culturally sensitive, and environmentally responsible professionals."
+  mission: "To provide quality, affordable hospitality and tourism education through immersive learning, industry partnerships, and community engagement, fostering excellence and innovation in service."
 
   # Core values — each item needs a title, description, and icon name.
   # Available icons: Star, Shield, Lightbulb, Heart, Award, BookOpen, Users, Target
   coreValues:
-    - title: "Excellence"
-      description: "We pursue the highest standards in academic quality, professional practice, and community service."
+    - title: "Service Excellence"
+      description: "We pursue the highest standards in guest service, operational quality, and professional practice."
       icon: "Star"
     - title: "Integrity"
-      description: "We uphold honesty, transparency, and ethical conduct in all our endeavors."
+      description: "We uphold honesty, transparency, and ethical conduct in all our hospitality endeavors."
       icon: "Shield"
     - title: "Innovation"
-      description: "We embrace new ideas, technologies, and approaches to advance business education."
+      description: "We embrace new ideas, technologies, and sustainable approaches to advance hospitality education."
       icon: "Lightbulb"
-    - title: "Service"
-      description: "We are committed to serving our students, institution, and the broader community."
+    - title: "Cultural Respect"
+      description: "We are committed to honoring diverse cultures and promoting inclusive, global-minded service."
       icon: "Heart"
 
   # Timeline — add or remove milestones as needed. Keep year as a 4-digit string.
   timeline:
-    - year: "1982"
-      event: "School of Business and Accountancy founded with BSA and BSBA programs"
-    - year: "1990"
-      event: "Achieved AACCUP Level I accreditation for the BSA program"
-    - year: "1998"
-      event: "Expanded to include Management Accounting program"
     - year: "2005"
-      event: "Launched the Master in Business Administration program"
-    - year: "2012"
-      event: "Achieved AACCUP Level IV accreditation — highest level"
+      event: "School of International Hospitality Management founded with BSHM and BSTM programs."
+    - year: "2015"
+      event: "Established state-of-the-art mock hotel, training kitchen, and tourism lab facilities."
     - year: "2018"
-      event: "Recognized as CHED Center of Development for Accountancy Education"
+      event: "Launched international internship exchange programs with partner institutions."
     - year: "2023"
-      event: "Launched digital transformation initiative for business education"
+      event: "Recognized for excellence in sustainable tourism education and community outreach."
+    - year: "2024"
+      event: "SIHM Faculty achieve prestigious CHMP and CTMP professional certifications."
+    - year: "2025"
+      event: "Reclaims Grand Champion title at the Bangusine Festival Cheerdance Competition."
