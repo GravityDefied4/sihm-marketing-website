@@ -9,13 +9,13 @@ university:
   address: "Arellano St., Dagupan City, Pangasinan, Philippines"
 
 school:
-  name: "School of Business and Accountancy"
-  abbreviation: "SBA"
-  slug: "sba"
-  tagline: "Superminence, Benevolence, Affluence"
-  description: "The School of Business and Accountancy is committed to producing globally competent graduates equipped with the knowledge, skills, and values needed to thrive in today's dynamic business environment."
-  primaryColor: "#FFDE42"
-  secondaryColor: "#001848"
+  name: "School of International Hospitality Management"
+  abbreviation: "SIHM"
+  slug: "sihm"
+  tagline: "Excellence in Global Hospitality and Tourism"
+  description: "The School of International Hospitality Management is committed to producing globally competent graduates equipped with the knowledge, skills, and values needed to thrive in the dynamic international hospitality and tourism industry."
+  primaryColor: "#f50000"
+  secondaryColor: "#8B0000"
 
   # ---------------------------------------------------------------------------
   # SCHOOL LOGO
@@ -31,7 +31,7 @@ school:
 
 # Social media links — paste the full URL or leave as "" to hide the icon.
 socialMedia:
-  facebook: "https://www.facebook.com/SBAUdD"
+  facebook: "https://www.facebook.com/SIHMUdD"
   instagram: ""
   twitter: ""
   youtube: ""
@@ -40,23 +40,23 @@ socialMedia:
 # STAT HIGHLIGHTS  (shown in the Why Choose Us section on the landing page)
 # ---------------------------------------------------------------------------
 highlights:
-  - title: "Board Exam Excellence"
-    description: "Consistent top performers in the CPA Licensure Examination."
-    icon: "Trophy"
-    stat: "95%"
-    statLabel: "Average Passing Rate"
-  - title: "Industry Partners"
-    description: "Strong linkages with leading companies and accounting firms."
-    icon: "Handshake"
-    stat: "50+"
-    statLabel: "Industry Partners"
-  - title: "Years of Excellence"
-    description: "Decades of producing quality business and accounting graduates."
-    icon: "Star"
-    stat: "40+"
-    statLabel: "Years of Service"
-  - title: "Graduate Employment"
-    description: "High employment rate among graduates within 6 months of graduation."
+  - title: "Global Internship Opportunities"
+    description: "Strong linkages with international hotels and tourism organizations."
+    icon: "Globe"
+    stat: "100+"
+    statLabel: "Global Partners"
+  - title: "Industry-Ready Graduates"
+    description: "High employment rate among graduates in top hospitality brands."
     icon: "Briefcase"
-    stat: "92%"
+    stat: "95%"
     statLabel: "Employment Rate"
+  - title: "State-of-the-Art Facilities"
+    description: "Modern training kitchens, mock hotel rooms, and tourism labs."
+    icon: "Star"
+    stat: "100%"
+    statLabel: "Modern Facilities"
+  - title: "Years of Excellence"
+    description: "Decades of producing quality hospitality and tourism graduates."
+    icon: "Award"
+    stat: "20+"
+    statLabel: "Years of Service"
