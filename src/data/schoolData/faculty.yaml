@@ -31,37 +31,73 @@ variant: grid
 #        image: "faculty/jose-reyes.webp"
 #   3. Leave as "" to show a placeholder silhouette icon.
 faculty:
-  - name: "Prof. Jose Reyes"
-    suffixes: "MBA, CPA"
-    title: "Program Chair, BSA"
-    specialization: "Financial Accounting & Reporting"
+  - name: "Prof. Roberto Mendoza"
+    suffixes: "MHA, CHA"
+    title: "Program Head, School of International Hospitality Management"
+    specialization: "Hospitality Management and Culinary Arts"
     image: ""
     socialMedia:
       facebook: ""
       linkedin: ""
 
-  - name: "Prof. Ana Cruz"
-    suffixes: "MBA"
-    title: "Program Chair, BSBA"
-    specialization: "Business Strategy & Marketing"
+  - name: "Dr. Antonio Villanueva"
+    suffixes: "PhD, CHMP"
+    title: "Associate Professor"
+    specialization: "Food and Beverage Management"
     image: ""
     socialMedia:
       facebook: ""
       linkedin: ""
 
-  - name: "Dr. Ramon Dela Cruz"
-    suffixes: "PhD, CPA"
-    title: "Associate Dean"
-    specialization: "Management Accounting"
-    image: ""
-    socialMedia:
-      facebook: ""
-      linkedin: ""
-
-  - name: "Prof. Liza Gonzales"
-    suffixes: "LLB, CPA"
+  - name: "Prof. Carmen Santos"
+    suffixes: "MBA, CTMP"
     title: "Faculty Member"
-    specialization: "Taxation & Business Law"
+    specialization: "Tourism Management and Sustainable Development"
+    image: ""
+    socialMedia:
+      facebook: ""
+      linkedin: ""
+
+  - name: "Prof. Eduardo Reyes"
+    suffixes: "MSHM, CHE"
+    title: "Faculty Member"
+    specialization: "Hotel Operations and Front Office Management"
+    image: ""
+    socialMedia:
+      facebook: ""
+      linkedin: ""
+
+  - name: "Prof. Luisa Cruz"
+    suffixes: "MTM"
+    title: "Faculty Member"
+    specialization: "Travel and Tour Operations"
+    image: ""
+    socialMedia:
+      facebook: ""
+      linkedin: ""
+
+  - name: "Prof. Miguel Garcia"
+    suffixes: "BSHM, CHMP"
+    title: "Instructor"
+    specialization: "Culinary Arts and Food Preparation"
+    image: ""
+    socialMedia:
+      facebook: ""
+      linkedin: ""
+
+  - name: "Prof. Patricia Torres"
+    suffixes: "MA Comm"
+    title: "Faculty Member"
+    specialization: "Hospitality Communication and Public Relations"
+    image: ""
+    socialMedia:
+      facebook: ""
+      linkedin: ""
+
+  - name: "Prof. Fernando Ramos"
+    suffixes: "MBA, CTMP"
+    title: "Faculty Member"
+    specialization: "Event Management and Conference Planning"
     image: ""
     socialMedia:
       facebook: ""
