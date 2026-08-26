@@ -46,12 +46,20 @@ export default function SchoolFooter({ school }: SchoolFooterProps) {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div
-                className="w-10 h-10 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: primary }}
-              >
-                <GraduationCap size={20} style={{ color: secondary }} />
-              </div>
+              {school.school.logo ? (
+                <img 
+                  src={school.school.logo} 
+                  alt={`${school.school.name} Logo`} 
+                  className="h-10 w-auto object-contain bg-white rounded-md p-1" 
+                />
+              ) : (
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: primary }}
+                >
+                  <GraduationCap size={20} style={{ color: secondary }} />
+                </div>
+              )}
               <div>
                 <p className="text-xs text-content-muted uppercase tracking-wide">{school.university.name}</p>
                 <p className="font-bold text-content leading-tight">{school.school.name}</p>

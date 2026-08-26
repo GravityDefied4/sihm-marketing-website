@@ -16,7 +16,6 @@ school:
   description: "At Universidad de Dagupan, our Hospitality and Tourism Management programs are designed to produce globally competitive, culturally sensitive, and environmentally responsible professionals ready to lead in the dynamic world of service."
   primaryColor: "#b91c1c"
   secondaryColor: "#7f1d1d"
-
   # ---------------------------------------------------------------------------
   # SCHOOL LOGO
   # ---------------------------------------------------------------------------
@@ -27,7 +26,7 @@ school:
   #   2. Set the value below to just the filename (no leading slash):
   #        logo: "logo.webp"
   #   3. Leave it as "" (empty) to show the school name as text instead.
-  logo: ""
+  logo: "sihm-logo.webp"
 
 # Social media links — paste the full URL or leave as "" to hide the icon.
 socialMedia:

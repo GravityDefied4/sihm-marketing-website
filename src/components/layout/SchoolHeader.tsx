@@ -89,9 +89,17 @@ export default function SchoolHeader({ school }: SchoolHeaderProps) {
 
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 flex-shrink-0">
-              <div className="w-10 h-10 rounded-full flex items-center justify-center text-white" style={{ backgroundColor: secondary }}>
-                <GraduationCap size={20} />
-              </div>
+              {school.school.logo ? (
+                <img 
+                  src={school.school.logo} 
+                  alt={`${school.school.name} Logo`} 
+                  className="h-10 w-auto object-contain" 
+                />
+              ) : (
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white" style={{ backgroundColor: secondary }}>
+                  <GraduationCap size={20} />
+                </div>
+              )}
               <div className="leading-tight">
                 <p className="text-xs text-content-subtle font-medium uppercase tracking-wide">{school.university.name}</p>
                 <p className="text-sm font-bold text-content max-w-[200px] sm:max-w-xs leading-tight">
@@ -99,7 +107,7 @@ export default function SchoolHeader({ school }: SchoolHeaderProps) {
                 </p>
               </div>
             </Link>
-
+            
             {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-0.5">
               {navItems.map((item) => (
