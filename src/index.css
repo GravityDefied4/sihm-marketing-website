@@ -19,26 +19,45 @@
 /* Dark surface overrides — apply data-theme="dark" to any dark-bg container */
 [data-theme="dark"] {
   --text-content: #ffffff;
-  --text-content-body: rgba(255, 255, 255, 0.80);
-  --text-content-muted: rgba(255, 255, 255, 0.60);
-  --text-content-subtle: rgba(255, 255, 255, 0.45);
+  --text-content-body: rgba(255, 255, 255, 0.90);
+  --text-content-muted: rgba(255, 255, 255, 0.70);
+  --text-content-subtle: rgba(255, 255, 255, 0.50);
 }
 
-/* 1. Hero Section: Always use light text because it has a dark gradient/image overlay */
-#hero {
+.bg-school-primary,
+.bg-school-secondary,
+.bg-school-primary\/90,
+.bg-school-primary\/80,
+.bg-school-secondary\/90,
+.bg-school-secondary\/80,
+.bg-school-primary\/70,
+.bg-school-secondary\/70 {
   --text-content: #ffffff;
   --text-content-body: rgba(255, 255, 255, 0.90);
   --text-content-muted: rgba(255, 255, 255, 0.70);
   --text-content-subtle: rgba(255, 255, 255, 0.50);
 }
 
-/* 2. Footer and any element explicitly using the dark secondary color */
-.bg-school-secondary,
-footer {
+[style*="background-color: #b91c1c"],
+[style*="background-color: #7f1d1d"],
+[style*="background: #b91c1c"],
+[style*="background: #7f1d1d"],
+[style*="background-color: rgb(185, 28, 28)"],
+[style*="background-color: rgb(127, 29, 29)"],
+[style*="background: linear-gradient"] {
   --text-content: #ffffff;
-  --text-content-body: rgba(255, 255, 255, 0.85);
-  --text-content-muted: rgba(255, 255, 255, 0.65);
-  --text-content-subtle: rgba(255, 255, 255, 0.45);
+  --text-content-body: rgba(255, 255, 255, 0.90);
+  --text-content-muted: rgba(255, 255, 255, 0.70);
+  --text-content-subtle: rgba(255, 255, 255, 0.50);
+}
+
+#hero,
+footer,
+section[style*="linear-gradient"] {
+  --text-content: #ffffff;
+  --text-content-body: rgba(255, 255, 255, 0.90);
+  --text-content-muted: rgba(255, 255, 255, 0.70);
+  --text-content-subtle: rgba(255, 255, 255, 0.50);
 }
 
 @layer base {
