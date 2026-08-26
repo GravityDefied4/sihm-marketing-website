@@ -24,6 +24,23 @@
   --text-content-subtle: rgba(255, 255, 255, 0.45);
 }
 
+/* 1. Hero Section: Always use light text because it has a dark gradient/image overlay */
+#hero {
+  --text-content: #ffffff;
+  --text-content-body: rgba(255, 255, 255, 0.90);
+  --text-content-muted: rgba(255, 255, 255, 0.70);
+  --text-content-subtle: rgba(255, 255, 255, 0.50);
+}
+
+/* 2. Footer and any element explicitly using the dark secondary color */
+.bg-school-secondary,
+footer {
+  --text-content: #ffffff;
+  --text-content-body: rgba(255, 255, 255, 0.85);
+  --text-content-muted: rgba(255, 255, 255, 0.65);
+  --text-content-subtle: rgba(255, 255, 255, 0.45);
+}
+
 @layer base {
   * {
     @apply box-border;
