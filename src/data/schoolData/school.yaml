@@ -14,8 +14,8 @@ school:
   slug: "sihm"
   tagline: "Immersive Learning. Global Opportunities. Service Excellence."
   description: "At Universidad de Dagupan, our Hospitality and Tourism Management programs are designed to produce globally competitive, culturally sensitive, and environmentally responsible professionals ready to lead in the dynamic world of service."
-  primaryColor: "#f50000"
-  secondaryColor: "#8B0000"
+  primaryColor: "#b91c1c"
+  secondaryColor: "#7f1d1d"
 
   # ---------------------------------------------------------------------------
   # SCHOOL LOGO

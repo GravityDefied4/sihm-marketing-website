@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 :root {
-  --school-primary: #f50000;
-  --school-secondary: #8B0000;
-  --school-accent: #ffe6e6;
+  --school-primary: #b91c1c;
+  --school-secondary: #7f1d1d;
+  --school-accent: #fef2f2;
 
   /* Semantic text colors — light surface (default) */
   --text-content: #111827;         /* gray-900 */
