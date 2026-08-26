@@ -30,12 +30,12 @@ contact:
 #        logo: "accreditations/iso.webp"
 #   3. Leave as "" to show a checkmark icon instead.
 accreditations:
-  - title: "ISO 21001:2018"
-    description: "Educational Organizations Management System Certification"
+  - title: "ISO 21001:2018 Certified"
+    description: "Globally recognized standard for Educational Organizations Management Systems, ensuring quality and continuous improvement."
     logo: ""
-  - title: "AACCUP Level IV"
-    description: "Accreditation of Association of Christian Colleges and Universities in the Philippines"
+  - title: "CHED Recognized Programs"
+    description: "Fully accredited by the Commission on Higher Education for Bachelor of Science in Hospitality and Tourism Management."
     logo: ""
-  - title: "CHED Center of Development"
-    description: "Recognized as a Center of Development for Accountancy Education"
+  - title: "DOT-Aligned Curriculum"
+    description: "Academic programs designed to meet the stringent professional standards of the Department of Tourism."
     logo: ""
