@@ -25,7 +25,7 @@ variant: split-right
 #   2. Set the value below to just the filename and subfolder (no leading slash):
 #        heroImage: "hero.webp"
 #   3. Leave it as "" to use a colored gradient background instead.
-heroImage: ""
+heroImage: "sihm-hero3.png"
 
 # Call-to-action buttons
 ctaPrimary:
